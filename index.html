@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional plumbing services in Blacksburg, VA. Emergency repairs, installations, and maintenance.">
+    <title>Blacksburg Plumbing Co.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container"><div style="display: flex; justify-content: space-around; align-items: center;">
+                <div>
+                    <h1>Blacksburg Plumbing Co.</h1>
+                    <p>Reliable plumbing services for your home and business</p>
+                </div>
+                <div>
+                    <p style="font-size: 1.2rem; font-weight: bold;">Call Us: <a href="tel:+15401234567" style="color: white; text-decoration: none;">540-123-4567</a></p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Your Trusted Plumbing Experts in Blacksburg, VA</h2>
+                <p>From emergency repairs to routine maintenance, we've got you covered.</p>
+                <img src="images/hero-plumber.jpg" alt="Plumber at work" style="width:100%; max-height:400px; object-fit:cover;">
+                <a href="#contact" class="btn">Get a Quote</a>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <h3>Emergency Repairs</h3>
+                        <img src="images/emergency-repair.jpg" alt="Emergency plumbing repair" style="width:100%; max-height:200px; object-fit:cover;">
+                        <p>24/7 assistance for leaks, clogs, and other urgent issues.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Installations</h3>
+                        <img src="images/installations.jpg" alt="Fixture installation" style="width:100%; max-height:200px; object-fit:cover;">
+                        <p>Expert installation of fixtures, water heaters, and appliances.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Maintenance</h3>
+                        <img src="images/maintenance.jpg" alt="Plumbing maintenance" style="width:100%; max-height:200px; object-fit:cover;">
+                        <p>Regular inspections and upkeep to keep your system running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <img src="images/about-us.jpg" alt="Plumbing team" style="width:100%; max-height:300px; object-fit:cover;">
+                <p>Blacksburg Plumbing Co. has been serving the Blacksburg community for over 20 years. Our team of licensed professionals is dedicated to providing high-quality service at affordable prices.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have a plumbing issue? We're here to help. Reach out to us today!</p>
+                <img src="images/contact.jpg" alt="Contact us" style="width:100%; max-height:300px; object-fit:cover;">
+                <form action="/submit" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Blacksburg Plumbing Co. | <a href="#">Privacy Policy</a></p>
+            <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+        </div>
+    </footer>
+</body>
+</html>
