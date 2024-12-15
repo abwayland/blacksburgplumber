@@ -1,59 +1,83 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, img, div {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
 header {
-    background: #007BFF;
-    color: white;
+    background: #0073e6;
+    color: #fff;
     padding: 1rem 0;
 }
 
-header .container {
-    text-align: center;
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+header p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 header nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
+    margin-top: 1rem;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 header nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
+/* Hero Section */
 #hero {
+    text-align: center;
     background: #f4f4f4;
     padding: 2rem 0;
-    text-align: center;
 }
 
 #hero h2 {
-    margin: 0 0 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 #hero .btn {
-    background: #007BFF;
-    color: white;
+    display: inline-block;
     padding: 0.5rem 1rem;
+    background: #0073e6;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
+/* Services Section */
 #services {
     padding: 2rem 0;
     background: #fff;
@@ -61,34 +85,47 @@ header nav ul li a {
 }
 
 #services h2 {
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .service-list {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .service-item {
-    flex: 1 1 30%;
-    margin: 1rem;
+    flex: 1 1 calc(33.333% - 1rem);
+    margin-bottom: 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#about {
-    padding: 2rem 0;
-    background: #f9f9f9;
     text-align: center;
 }
 
-#about h2 {
+.service-item img {
     margin-bottom: 1rem;
+    border-radius: 5px;
 }
 
+/* About Section */
+#about {
+    padding: 2rem 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#about img {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#about p {
+    font-size: 1rem;
+}
+
+/* Contact Section */
 #contact {
     padding: 2rem 0;
     background: #fff;
@@ -96,40 +133,44 @@ header nav ul li a {
 }
 
 #contact form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 500px;
+    margin: 1rem auto;
+    text-align: left;
 }
 
-#contact label {
+#contact form label {
     display: block;
-    margin: 0.5rem 0 0.2rem;
+    margin-bottom: 0.5rem;
 }
 
-#contact input, #contact textarea {
+#contact form input, #contact form textarea {
     width: 100%;
-    padding: 0.5rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-#contact .btn {
-    background: #007BFF;
-    color: white;
+#contact form .btn {
+    display: inline-block;
     padding: 0.5rem 1rem;
-    border: none;
+    background: #0073e6;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+/* Footer Styles */
 footer {
     background: #333;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
+    margin-top: 2rem;
 }
 
 footer a {
-    color: #007BFF;
+    color: #0073e6;
     text-decoration: none;
 }
