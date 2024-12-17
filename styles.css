@@ -3,8 +3,6 @@ body, h1, h2, h3, p, ul, li, a, img, div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border for testing flex */
-    /* border: 1px solid black;  */
 }
 
 /* Body and Global Styles */
@@ -15,6 +13,7 @@ body {
 }
 
 .container {
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -67,8 +66,7 @@ header nav {
 }
 
 .logo img {
-    flex-basis: 100px;
-    padding: 1rem;
+    margin-right: 1rem;
 }
 
 /* Hero Section */
@@ -193,4 +191,40 @@ footer {
 footer a {
     color: #0073e6;
     text-decoration: none;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
 }
