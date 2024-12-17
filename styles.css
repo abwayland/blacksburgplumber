@@ -3,6 +3,8 @@ body, h1, h2, h3, p, ul, li, a, img, div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border for testing flex */
+    /* border: 1px solid black;  */
 }
 
 /* Body and Global Styles */
@@ -13,14 +15,13 @@ body {
 }
 
 .container {
-    width: 90%;
     margin: 0 auto;
 }
 
 /* Header Styles */
 header {
-    background: #0073e6;
-    color: #fff;
+    background: white;
+    color: darkblue;
     padding: 1rem 0;
 }
 
@@ -38,7 +39,6 @@ header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-top: 1rem;
 }
 
 header nav ul li {
@@ -47,8 +47,28 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    color: white;
+    font-weight: normal;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkblue;
+    padding: 1rem;    
+    border-top: 3px solid red;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.logo img {
+    flex-basis: 100px;
+    padding: 1rem;
 }
 
 /* Hero Section */
